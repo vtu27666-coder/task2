@@ -1,0 +1,18 @@
+import random 
+def guess_number(): 
+    # Generate a random number between 1 and 9 
+    target_number = random.randint(1, 9) 
+ 
+    while True: 
+        # Prompt the user to enter a guess 
+        user_guess = int(input("Guess a number between 1 and 9: ")) 
+         
+        # Check if the guess is correct 
+        if user_guess == target_number: 
+            print("Well guessed!") 
+            break 
+        else: 
+            print("Wrong guess. Try again.") 
+ 
+# Call the function 
+guess_number()
